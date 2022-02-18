@@ -1,0 +1,26 @@
+@height: 40px;
+.header {
+  background: linear-gradient(90deg, #3951E7 20.77%, #832AB9 91.64%);
+  width: 100%;
+}
+
+.header__content {
+  min-height: @height;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__language {
+  min-height: @height;
+  display: flex;
+  align-items: center;
+
+  & span{
+    margin-right: 8px ;
+    font-weight: 600;
+    font-size: 12px;
+    color: white;
+  }
+}

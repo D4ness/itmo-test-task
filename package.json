@@ -39,5 +39,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@parcel/transformer-less": "^2.0.1",
+    "less": "^4.1.2",
+    "parcel": "^2.3.1"
   }
 }

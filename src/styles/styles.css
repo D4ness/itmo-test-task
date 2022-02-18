@@ -1,0 +1,38 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #fff;
+  font: 14px/1.4 "Open Sans", sans-serif;
+  color: #333;
+}
+.wrapper {
+  margin: 0 40px;
+}
+.header {
+  background: linear-gradient(90deg, #3951E7 20.77%, #832AB9 91.64%);
+  width: 100%;
+}
+.header__content {
+  min-height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__language {
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+}
+.header__language span {
+  margin-right: 8px ;
+  font-weight: 600;
+  font-size: 12px;
+  color: white;
+}
+/*# sourceMappingURL=styles.css.map */

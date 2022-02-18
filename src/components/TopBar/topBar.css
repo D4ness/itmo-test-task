@@ -1,0 +1,31 @@
+.top-bar {
+  height: 86px;
+  display: flex;
+  justify-content: space-between;
+}
+.top-bar__logo {
+  display: flex;
+  align-items: center;
+}
+.top-bar__logo img {
+  width: 56px;
+  height: 50px;
+}
+.top-bar__title {
+  font-weight: bold;
+  font-size: 28px;
+  margin-left: 16px;
+}
+.top-bar__buttons {
+  display: flex;
+  align-items: center;
+}
+.top-bar__button {
+  margin-left: 40px;
+  font-family: "Open Sans";
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #222222;
+}
+/*# sourceMappingURL=topBar.css.map */

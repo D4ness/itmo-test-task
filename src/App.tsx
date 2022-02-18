@@ -1,11 +1,13 @@
 import React from 'react';
-import Header from "./components/Header";
-import './styles/styles.css';
+import Header from "./components/Header/Header";
+import './styles/globals.css';
+import TopBar from "./components/TopBar/TopBar";
 
 const App = () => {
     return (
         <div>
-            <Header/>
+            <Header language='En'/>
+            <TopBar/>
         </div>
     );
 };

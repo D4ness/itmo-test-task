@@ -1,4 +1,4 @@
-import React, {ReactChildren} from 'react';
+import React from 'react';
 import './itmo-button.css';
 
 const ItmoButton: React.FC = ({children}) => {

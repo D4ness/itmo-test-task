@@ -30,12 +30,12 @@
   max-width: 100%;
   color: #fff;
 }
-.banner__slide-title {
+.banner__slide__title {
   font-weight: bold;
   font-size: 56px;
   padding-bottom: 32px;
 }
-.banner__slide-body {
+.banner__slide__body {
   width: 700px;
   font-family: Open Sans;
   font-weight: 600;

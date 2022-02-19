@@ -5,10 +5,10 @@ import {Post} from './Banner';
 const BannerSlide: React.FC<Post> = ({title, body}) => {
     return (
         <div className='banner__slide'>
-            <h1 className='banner__slide-title'>
+            <h1 className='banner__slide__title'>
                 {title}
             </h1>
-            <div className='banner__slide-body'>
+            <div className='banner__slide__body'>
                 {body}
             </div>
             <form>

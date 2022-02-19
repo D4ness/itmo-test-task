@@ -1,7 +1,5 @@
-import React, {useRef, useState} from 'react';
+import React, {useState} from 'react';
 import './banner.css';
-// import arrowPrev from '../../images/Banner/arrow-prev.svg';
-// import arrowNext from '../../images/Banner/arrow-next.svg';
 import BannerSlide from './BannerSlide';
 
 export type Post = {
@@ -54,7 +52,6 @@ const Banner: React.FC = () => {
 
     return (
         <section className='banner'>
-            {/*<div className='small-wrapper'>*/}
             <div className='banner__arrow banner__arrow-prev' onClick={slideLeft}/>
             <div className='banner__content' style={{width: slideWidth + 'px'}}>
                 <div className='banner__slider' style={{transform: `translateX(${offsetX}px)`,}}>
@@ -62,7 +59,6 @@ const Banner: React.FC = () => {
                 </div>
             </div>
             <div className='banner__arrow banner__arrow-next' onClick={slideRight}/>
-            {/*</div>*/}
         </section>
     );
 };

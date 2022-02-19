@@ -1,0 +1,47 @@
+.banner {
+  background-image: url("../../images/Banner/banner-bg.png");
+  height: 484px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner__arrow {
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+}
+.banner__arrow-prev {
+  background-image: url("../../images/Banner/arrow-prev.svg");
+}
+.banner__arrow-next {
+  background-image: url("../../images/Banner/arrow-next.svg");
+}
+.banner__content {
+  margin: 0 32px;
+  overflow: hidden;
+}
+.banner__slider {
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+  display: flex;
+}
+.banner__slide {
+  min-width: 100%;
+  max-width: 100%;
+  color: #fff;
+}
+.banner__slide-title {
+  font-weight: bold;
+  font-size: 56px;
+  padding-bottom: 32px;
+}
+.banner__slide-body {
+  width: 700px;
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: #F7F9FE;
+  padding-bottom: 24px;
+}
+/*# sourceMappingURL=banner.css.map */

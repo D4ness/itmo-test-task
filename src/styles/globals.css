@@ -10,7 +10,11 @@ body {
   font: 14px/1 Muller, sans-serif;
   color: #222;
 }
-.wrapper {
+.big-wrapper {
   margin: 0 40px;
+}
+.small-wrapper {
+  width: 1216px;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=globals.css.map */

@@ -11,7 +11,7 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({language}) => {
     return (
         <header className='header'>
-            <div className='wrapper'>
+            <div className='big-wrapper'>
                 <div className='header__content'>
                     <img src={logo} alt='Логотип ИТМО'/>
                     <div className='header__language'><span>{language}</span><img

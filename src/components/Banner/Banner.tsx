@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import './banner.css';
 import BannerSlide from './BannerSlide';
+import arrowPrev from '../../images/Banner/arrow-prev.svg';
+import arrowNext from '../../images/Banner/arrow-next.svg';
 
 export type Post = {
     title: string,
@@ -9,7 +11,7 @@ export type Post = {
 
 const Banner: React.FC = () => {
 
-    const [slides, setSlides] = useState<Post[]>([
+    const slides: Post[] = [
         {
             title: 'Началась подача документов',
             body: 'Программа предполагает углубленное изучение вопросов, ' +
@@ -28,11 +30,11 @@ const Banner: React.FC = () => {
                 'reprehenderit voluptate? Ab, adipisci, aut corporis delectus, dolore ducimus in incidunt ipsum neque ' +
                 'odio praesentium quae veritatis voluptatibus?',
         }
-    ]);
+    ];
 
     const [offsetX, setOffsetX] = useState<number>(0);
 
-    const slideWidth: number = 1000;
+    const slideWidth: number = 1100;
     const maxOffset: number = -slideWidth * (slides.length - 1);
 
     const slideLeft: () => void = () => {
@@ -52,13 +54,13 @@ const Banner: React.FC = () => {
 
     return (
         <section className='banner'>
-            <div className='banner__arrow banner__arrow-prev' onClick={slideLeft}/>
+            <img className='banner__arrow' src={arrowPrev} alt='Previous slide' onClick={slideLeft}/>
             <div className='banner__content' style={{width: slideWidth + 'px'}}>
-                <div className='banner__slider' style={{transform: `translateX(${offsetX}px)`,}}>
+                <div className='banner__slider' style={{transform: `translateX(${offsetX}px)`}}>
                     {slides.map(slide => <BannerSlide title={slide.title} body={slide.body}/>)}
                 </div>
             </div>
-            <div className='banner__arrow banner__arrow-next' onClick={slideRight}/>
+            <img className='banner__arrow' src={arrowNext} alt='Next slide' onClick={slideRight}/>
         </section>
     );
 };

@@ -1,0 +1,42 @@
+.disciplines {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.disciplines__header {
+  font-weight: bold;
+  font-size: 40px;
+  color: #222222;
+  margin: 0 0 40px;
+}
+.discipline {
+  border: #EAEFFC solid 1px;
+  border-radius: 8px;
+  font-family: 'Open Sans';
+  line-height: 24px;
+  letter-spacing: 0.0016px;
+  color: #222222;
+  margin: 0 0 8px;
+  transition: all linear 0.2s;
+}
+.discipline__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 528px;
+  height: 72px;
+  margin: 0 32px;
+}
+.discipline__header {
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+.discipline__content {
+  width: 528px;
+  margin: 16px 32px 24px;
+  font-weight: 400;
+  font-size: 14px;
+}
+/*# sourceMappingURL=disciplines.css.map */

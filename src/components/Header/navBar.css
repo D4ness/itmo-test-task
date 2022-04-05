@@ -1,26 +1,28 @@
-.top-bar {
+.nav-bar {
   height: 86px;
   display: flex;
   justify-content: space-between;
+  background-color: #fff;
+  padding: 0 40px;
 }
-.top-bar__logo {
+.nav-bar__logo {
   display: flex;
   align-items: center;
 }
-.top-bar__logo img {
+.nav-bar__logo img {
   width: 56px;
   height: 50px;
 }
-.top-bar__title {
+.nav-bar__title {
   font-weight: bold;
   font-size: 28px;
   margin-left: 16px;
 }
-.top-bar__buttons {
+.nav-bar__buttons {
   display: flex;
   align-items: center;
 }
-.top-bar__button {
+.nav-bar__button {
   margin-left: 40px;
   font-family: "Open Sans";
   font-size: 16px;
@@ -28,4 +30,4 @@
   text-decoration: none;
   color: #222222;
 }
-/*# sourceMappingURL=topBar.css.map */
+/*# sourceMappingURL=navBar.css.map */

@@ -3,6 +3,7 @@ import './header.css'
 import logo from '../../images/Header/itmo-logo.svg'
 import flagEn from '../../images/Header/united-kingdom.svg'
 import flagRu from '../../images/Header/united-kingdom.svg'
+import NavBar from "./NavBar";
 
 interface HeaderProps {
     language: string;
@@ -18,8 +19,11 @@ const Header: React.FC<HeaderProps> = ({language}) => {
                         src={language === 'En' ? flagEn : flagRu} alt='Флаг'/></div>
                 </div>
             </div>
+                <NavBar/>
         </header>
     );
 };
 
 export default Header;
+
+//TODO переделать язык в кликабельный со сменой на русский
